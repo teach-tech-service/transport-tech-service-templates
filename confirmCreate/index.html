@@ -136,14 +136,6 @@
         background: #ff9900;
       }
 
-      .button-panel a:last-of-type {
-        border: 3px solid red;
-      }
-
-      .button-panel a:last-of-type:hover {
-        background: red;
-      }
-
       .email-footer {
         color: white;
         font-size: 12px;
@@ -151,31 +143,49 @@
         background: #146eb4;
         padding: 0.5rem 0.5rem 0.5rem 0.5rem;
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
       }
+
+      .email-footer p:first-of-type {
+        margin-bottom: 10px;
+      }
+
+      .email-footer p:last-of-type {
+        margin-top: 10px;
+        margin-bottom: 20px;
+      }
+
+      .hiperlink {
+        text-decoration: underline;
+        color: #ff9900;
+      }
+
     </style>
   </head>
   <body>
     <div class="email-body">
       <img src="../logo.png" class="company-logo" />
       <h2 class="company-name">Transport Tech Service</h2>
+      <h4>Witaj <b>Marcin Warzybok</b></h4>
       <h4>
-        Potwierdzenie usunięcia konta na platformie
+        Potwierdzenie założenia konta na platformie
         <br />
-        https://transport-tech-service.com
+        <a href="#" class="hiperlink">
+          https://transport-tech-service.com
+        </a>
       </h4>
       <div class="button-panel">
         <a href="#">
-          Tak
-        </a>
-        <a href="#">
-          Nie
+          Zatwierdź
         </a>
       </div>
       <div class="email-footer">
         <p>
-          Jesli usuniesz konto, aktywacja będzie możliwa przez następne 6
-          miesięcy
+          <b>Tel: +48 608 624 531</b>
+        </p>
+        <p>
+          <b>Email: admin@teachtechservice.com</b>
         </p>
       </div>
     </div>
